@@ -33,10 +33,10 @@ getData()
 .then(data => {
     const todaysDate = dateToUnixTime();
     let todaysLiturgy = [];
-    Object.keys(data).forEach((key => {
+    Object.keys(data).forEach(key => {
        if (data[key].date === todaysDate) {
            todaysLiturgy.push(data[key]);
        }
-    }));
+    });
     console.log(todaysLiturgy);
 })
